@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/*Indexpage*/
+section.section1 form {
+    max-width: 500px;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+section.section1 form label {
+    margin: 1rem auto;
+}
+
+section.section1 form input[type=email] {
+    border: 1px solid #333;
+    border-radius: 1rem;
+    padding: .3rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+/*ratingPAge*/
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    align-items: center;
+}
+
+form input[type=text] {
+    max-width: 300px;
+    width: 100%;
+    margin: .5rem auto;
+    padding: .5rem;
+    border: 1px solid #333;
+    border-radius: 1rem;
+}
+
+form div.radioButtons div.stars{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+form div.radioButtons h3 {
+    margin: 1rem auto 0 auto;
+}
+
+form div.radioButtons input[type=radio] {
+    display: none;
+    margin: 0;
+}
+
+form div.radioButtons label {
+    display: inline-block;
+    position: relative;
+    color: #fd4;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0;
+}
+
+form div.radioButtons div.stars input:not(:checked) ~ label:hover:before,
+form div.radioButtons div.stars input:not(:checked) ~ label:hover ~ label:before {
+    content: '\2605';
+    position: absolute;
+    color: #fd4;
+}
+
+form div.radioButtons div.stars input:checked ~ label::before {
+    color: #fd4;
+    content: '\2605';
+    position: absolute;
+}
+
+form div.radioButtons input#rate-5:checked ~ label,
+form div.radioButtons input#rate2-5:checked ~ label,
+form div.radioButtons input#rate3-5:checked ~ label {
+    color: #fd4;
+    text-shadow: 0 0 10px #fe1;
+}
+
+form textarea {
+    max-width: 500px;
+    width: 90%;
+    height: 200px;
+    max-height: 300px;
+    resize: none;
+}
+
+
+/*Button*/
+form button {
+    padding: .5rem;
+    margin: .5rem auto;
+    display: block;
+    color: #eee;
+    background-color: #395;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #397;
+}

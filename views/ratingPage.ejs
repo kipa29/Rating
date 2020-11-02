@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Index</title>
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <main>
+        <h1>Kiitos, että autat hakijaa työnhaussa.</h1>
+        <form action="/send" method="POST">
+            <h2>Arvioi kuinka hyvin väittämät pitävät paikkansa.</h2>
+            <input type="text" name="yritys" placeholder="Yrityksen ja/tai haettavan position nimi" required>
+            <div class="radioButtons">
+                <h3>Hakemus oli asiallinen.</h3>
+                <div class="stars">
+                    <input value="5" type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="">&#9734</label>
+                    <input value="4" type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="">&#9734</label>
+                    <input value="3" type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="">&#9734</label>
+                    <input value="2" type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="">&#9734</label>
+                    <input value="1" type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="">&#9734</label>
+                </div>   
+                <h3>Hakijasta sai hyvän kuvan hekmuksen perusteella.</h3>
+                <div class="stars">
+                    <input value="5" type="radio" name="rate2" id="rate2-5">
+                    <label for="rate2-5" class="">&#9734</label>
+                    <input value="4" type="radio" name="rate2" id="rate2-4">
+                    <label for="rate2-4" class="">&#9734</label>
+                    <input value="3" type="radio" name="rate2" id="rate2-3">
+                    <label for="rate2-3" class="">&#9734</label>
+                    <input value="2" type="radio" name="rate2" id="rate2-2">
+                    <label for="rate2-2" class="">&#9734</label>
+                    <input value="1" type="radio" name="rate2" id="rate2-1">
+                    <label for="rate2-1" class="">&#9734</label>
+                </div> 
+                <h3>Hakija toi oleellisen osaamisen esille.</h3>
+                <div class="stars">
+                    <input value="5" type="radio" name="rate3" id="rate3-5">
+                    <label for="rate3-5" class="">&#9734</label>
+                    <input value="4" type="radio" name="rate3" id="rate3-4">
+                    <label for="rate3-4" class="">&#9734</label>
+                    <input value="3" type="radio" name="rate3" id="rate3-3">
+                    <label for="rate3-3" class="">&#9734</label>
+                    <input value="2" type="radio" name="rate3" id="rate3-2">
+                    <label for="rate3-2" class="">&#9734</label>
+                    <input value="1" type="radio" name="rate3" id="rate3-1">
+                    <label for="rate3-1" class="">&#9734</label>
+                </div> 
+            </div>
+            <h3>Jos haluat voit omin sanoin kertoa minkälaisia tunteita hakemus herätti.</h3>
+            <textarea name="message" id="" placeholder="Hakemus oli..."></textarea>
+            <button>Arvioi</button>
+        </form>
+    </main>
+
+</body>
+</html>
